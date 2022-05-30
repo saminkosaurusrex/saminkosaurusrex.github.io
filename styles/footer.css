@@ -1,0 +1,95 @@
+footer {
+  background-color: #97d700;
+  color: #E8FFB3;
+}
+
+footer .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (half)[2];
+      grid-template-columns: repeat(2, half);
+}
+
+footer .container .info {
+  display: -ms-grid;
+  display: grid;
+}
+
+footer .container .info h3 {
+  color: black;
+  text-align: center;
+}
+
+footer .container .info .contact {
+  padding: 1rem 3rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[2];
+      grid-template-columns: repeat(2, auto);
+  -ms-grid-column-align: center;
+      justify-self: center;
+  gap: 1rem;
+}
+
+footer .container .info .contact .contact:nth-child(odd) {
+  margin: 100px;
+}
+
+@media (min-width: 420px) {
+  footer .container .info .contact {
+    -ms-grid-columns: (auto)[4];
+        grid-template-columns: repeat(4, auto);
+  }
+}
+
+@media (min-width: 720px) {
+  footer .container .info .contact {
+    -ms-grid-columns: (auto)[8];
+        grid-template-columns: repeat(8, auto);
+  }
+}
+
+footer .container .socials {
+  display: -ms-grid;
+  display: grid;
+}
+
+footer .container .socials h3 {
+  color: black;
+  text-align: center;
+}
+
+footer .container .socials .links {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[4];
+      grid-template-columns: repeat(4, auto);
+}
+
+footer .container .socials .links a {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  font-size: 30px;
+  background: #E8FFB3;
+  color: black;
+  text-decoration: none;
+  width: 5rem;
+  height: 5rem;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  border-radius: 50%;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+footer .autor {
+  text-align: center;
+  color: #808080;
+  font-size: small;
+}
+/*# sourceMappingURL=footer.css.map */

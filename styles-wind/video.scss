@@ -1,0 +1,12 @@
+@import "../styles/def.scss";
+#video{
+    .container-video{
+       display: grid; 
+       justify-content: center;
+       
+        video{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

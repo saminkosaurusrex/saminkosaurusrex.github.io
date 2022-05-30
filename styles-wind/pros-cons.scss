@@ -1,0 +1,30 @@
+@import "../styles/def.scss";
+.pros-cons{
+   .container-pros-cons{
+       display: grid;
+       .pros{
+           background-color: rgb(122, 122, 204);
+           color: white;
+           padding: 3rem;
+        h4{
+            margin: 2rem 0;
+            
+        }
+        div{} 
+       }
+
+       .cons{
+           background-color: rgb(204, 118, 118);           
+           padding: 3rem;
+        h4{
+            margin: 2rem 0;
+        }
+        div{}
+       }
+
+       @media(min-width: 500px){
+        grid-template-columns: repeat(2, auto);
+        
+       }
+   } 
+}
