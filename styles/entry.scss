@@ -1,0 +1,31 @@
+@import "./def.scss";
+
+    #entry{
+        width: 100vh;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: repeat(5, auto);
+        align-content: center;
+        justify-content: center;
+
+        a{
+            text-decoration: none;
+            color: $color01;
+        }
+
+        .cars{
+                
+        }
+        
+        .scoot{}
+
+        img{
+          width: 80%;  
+         }
+
+        .solar{}
+
+         .wind{}
+            
+         
+    }

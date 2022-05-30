@@ -1,0 +1,47 @@
+.brands h3 {
+  text-align: center;
+  color: #97d700;
+}
+
+.brands .container-brands {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[1];
+      grid-template-columns: repeat(1, auto);
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.brands .container-brands a img {
+  width: 100px;
+  height: 50;
+}
+
+.brands .container-brands a:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+@media (min-width: 300px) {
+  .brands .container-brands {
+    -ms-grid-columns: (auto)[2];
+        grid-template-columns: repeat(2, auto);
+  }
+}
+
+@media (min-width: 500px) {
+  .brands .container-brands {
+    -ms-grid-columns: (auto)[3];
+        grid-template-columns: repeat(3, auto);
+  }
+}
+
+@media (min-width: 1100px) {
+  .brands .container-brands {
+    -ms-grid-columns: (auto)[6];
+        grid-template-columns: repeat(6, auto);
+  }
+}
+/*# sourceMappingURL=sponsors.css.map */

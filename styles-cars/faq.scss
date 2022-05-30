@@ -1,0 +1,39 @@
+@import "../styles/def.scss";
+.faq{
+   h1{
+       text-align: center;
+       margin-top: 2rem;
+       color: $color01;
+   }
+    .container-faq{
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        gap: 3rem;
+        padding: 3rem;
+        .card-faq{
+            color: white;
+            background-color: black;
+            display: grid;
+            gap: 3rem;
+            padding: 2rem;
+            border-radius: 4rem;
+            .title{
+                
+                h3{
+                    text-align: center;
+                }
+            }
+            .answer{
+                text-align: center;
+            }
+        }
+        
+        @media(min-width: 700px){
+            grid-template-columns: repeat(2, auto);
+        }
+
+        @media(min-width: 1300px){
+            grid-template-columns: repeat(4, auto);
+        }
+    }
+}

@@ -1,0 +1,23 @@
+#entry {
+  width: 100vh;
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[5];
+      grid-template-columns: repeat(5, auto);
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#entry a {
+  text-decoration: none;
+  color: #97d700;
+}
+
+#entry img {
+  width: 80%;
+}
+/*# sourceMappingURL=entry.css.map */

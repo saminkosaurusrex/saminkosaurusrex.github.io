@@ -1,0 +1,78 @@
+@import "./def.scss";
+
+footer{
+    background-color: $color01;
+    color: $color04;
+    .container{
+        display: grid;
+        grid-template-columns: repeat(2, half);
+        
+        .info{
+            display: grid;
+            h3{
+                color: black;
+                text-align: center;
+            }
+            .contact{
+                 padding: 1rem 3rem;
+                display: grid;
+                grid-template-columns: repeat(2, auto);
+                justify-self: center;
+                gap: 1rem;
+                    
+                 .contact:nth-child(odd){
+                     margin: 100px;
+                 }
+
+                    
+
+             }
+                
+            @media(min-width: 420px){
+                .contact{
+                    grid-template-columns: repeat(4, auto);
+                }
+             }
+
+            @media(min-width: 720px){
+                .contact{
+                    grid-template-columns: repeat(8, auto);
+                }
+            }
+        }
+        .socials{   
+            display: grid;
+            h3{
+                color: black;
+                text-align: center;
+            }
+            .links{
+                display: grid;
+                grid-template-columns: repeat(4, auto);
+    
+                a{
+                    
+                    justify-self: center;
+                    font-size: 30px;
+                    //align-self: center;
+                    background: $color04;
+                    color: black;
+                    text-decoration: none;
+                    width: 5rem;
+                    height: 5rem;
+                    display: grid;
+                    justify-content: center;
+                    align-content: center;
+                    border-radius: 50%;
+                    transition: .5s;
+                }
+            }
+        }
+        
+    }
+    .autor{
+        text-align: center;
+        color: $color02;
+        font-size: small;
+    }
+}

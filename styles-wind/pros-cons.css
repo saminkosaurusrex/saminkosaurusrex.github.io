@@ -1,0 +1,31 @@
+.pros-cons .container-pros-cons {
+  display: -ms-grid;
+  display: grid;
+}
+
+.pros-cons .container-pros-cons .pros {
+  background-color: #7a7acc;
+  color: white;
+  padding: 3rem;
+}
+
+.pros-cons .container-pros-cons .pros h4 {
+  margin: 2rem 0;
+}
+
+.pros-cons .container-pros-cons .cons {
+  background-color: #cc7676;
+  padding: 3rem;
+}
+
+.pros-cons .container-pros-cons .cons h4 {
+  margin: 2rem 0;
+}
+
+@media (min-width: 500px) {
+  .pros-cons .container-pros-cons {
+    -ms-grid-columns: (auto)[2];
+        grid-template-columns: repeat(2, auto);
+  }
+}
+/*# sourceMappingURL=pros-cons.css.map */
